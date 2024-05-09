@@ -21,10 +21,10 @@ jobs:
 
     - name: Build and push Docker image to Docker Hub
       run: |
-        docker build -t your-image-name .
-        docker tag your-image-name your-dockerhub-username/your-image-name:latest
+        docker build -t uttara .
+        docker tag uttara your-dockerhub-username/your-image-name:latest
         docker push your-dockerhub-username/your-image-name:latest
 
     - name: Deploy to staging environment
       run: |
-        docker run -d -p 8080:8080 your-dockerhub-username/your-image-name:latest
+        docker run -d -p 8080:8080 your-dockerhub-username/uttara:latest
