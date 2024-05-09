@@ -14,7 +14,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Build Docker image
-      run: docker build -t Uttara1 .
+      run: docker build -t uttara .
 
     - name: Run tests (dummy test for demonstration)
       run: echo "Running dummy tests..."
